@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+use lib "$ENV{HOME}/git/dse.d/perl-tree-commitgraph/lib";
+use Tree::CommitGraph::Git;
+
+my $g = Tree::CommitGraph::Git->new();
+$g->run(@ARGV);
